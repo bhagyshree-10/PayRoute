@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light;
+
+  /* PayRoute Brand Colors */
+  --color-primary: #0070BA;
+  --color-primary-dark: #003087;
+  --color-accent: #00A8E0;
+
+  /* Neutrals */
+  --color-background: #F7F9FC;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F0F4F8;
+
+  --color-border: #D9E2EC;
+  --color-border-strong: #7A8FA6;
+
+  --color-text: #102A43;
+  --color-text-secondary: #52667A;
+  --color-text-muted: #627D98;
+
+  --color-primary-subtle: #E6F1F8;
+  --color-accent-subtle: #E0F5FC;
+
+  /* Status */
+  --color-success: #198754;
+  --color-success-text: #146C43;
+  --color-success-subtle: #E6F4EC;
+
+  --color-warning: #D97706;
+  --color-warning-text: #92400E;
+  --color-warning-subtle: #FDF3E3;
+
+  --color-error: #DC3545;
+  --color-error-text: #B02A37;
+  --color-error-subtle: #FBE9EB;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Inter Variable', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars & utilities */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
